@@ -1,0 +1,138 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cal Sans', sans-serif;
+}
+
+body {
+  background-color: #f5f5fa;
+  color: #2e2e3a;
+  line-height: 1.6;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 220px;
+  height: 100vh;
+  background-color: #e0e4fb;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.8em;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #2e2e3a;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  width: 100%;
+}
+
+.sidebar nav ul li {
+  margin: 20px 0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: #2e2e3a;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.sidebar nav ul li a:hover {
+  color: #4a6ef1;
+}
+
+
+.main-content {
+  margin-left: 220px;
+  width: calc(100% - 220px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.top-header {
+  background-color: #d7c5f0;
+  padding: 30px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+main {
+  padding: 40px 20px;
+  background-image: url('sleepy.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+main section {
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 30px;
+  margin-bottom: 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #2e2e3a;
+  border-bottom: 2px solid #a388f6;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+
+.about-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 4px solid #c8d4f8;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+#contact a {
+  color: #4a6ef1;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+#contact a:hover {
+  color: #2e2e3a;
+}
+
+
+footer {
+  text-align: center;
+  background-color: #bfdcf9;
+  padding: 20px;
+  color: #2e2e3a;
+  font-weight: 500;
+}
